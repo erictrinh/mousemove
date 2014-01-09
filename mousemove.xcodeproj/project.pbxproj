@@ -10,6 +10,7 @@
 		79587465187E5E9600B48047 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79587464187E5E9600B48047 /* Foundation.framework */; };
 		79587468187E5E9600B48047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79587467187E5E9600B48047 /* main.m */; };
 		7958746C187E5E9600B48047 /* mousemove.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7958746B187E5E9600B48047 /* mousemove.1 */; };
+		79587473187E65D000B48047 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79587472187E65D000B48047 /* ApplicationServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +29,10 @@
 /* Begin PBXFileReference section */
 		79587461187E5E9600B48047 /* mousemove */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mousemove; sourceTree = BUILT_PRODUCTS_DIR; };
 		79587464187E5E9600B48047 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		79587467187E5E9600B48047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79587467187E5E9600B48047 /* main.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; tabWidth = 4; };
 		7958746A187E5E9600B48047 /* mousemove-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mousemove-Prefix.pch"; sourceTree = "<group>"; };
 		7958746B187E5E9600B48047 /* mousemove.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = mousemove.1; sourceTree = "<group>"; };
+		79587472187E65D000B48047 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79587473187E65D000B48047 /* ApplicationServices.framework in Frameworks */,
 				79587465187E5E9600B48047 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +68,7 @@
 		79587463187E5E9600B48047 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79587472187E65D000B48047 /* ApplicationServices.framework */,
 				79587464187E5E9600B48047 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -251,6 +255,7 @@
 				79587471187E5E9600B48047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,16 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ApplicationServices/ApplicationServices.h>
 
-int main(int argc, const char * argv[])
-{
+void moveMouse(int x, int y) {
+    
+    CGEventRef theEvent = CGEventCreateMouseEvent(NULL, kCGEventMouseMoved, CGPointMake(x, y), kCGMouseButtonLeft);
+    CGEventPost(kCGHIDEventTap, theEvent);
+    CFRelease(theEvent);
 
-    @autoreleasepool {
-        
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
-    }
-    return 0;
 }
 
+int main(int argc, const char *argv[]) {
+    
+    @autoreleasepool {
+        NSString *xarg = [NSString stringWithUTF8String:argv[1]];
+        NSString *yarg = [NSString stringWithUTF8String:argv[2]];
+        
+        int x = [xarg intValue];
+        int y = [yarg intValue];
+        
+        moveMouse(x, y);
+    }
+    return 0;
+
+}
